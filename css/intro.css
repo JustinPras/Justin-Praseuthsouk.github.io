@@ -1,3 +1,12 @@
+/* The intro section taking the full viewport */
+#intro {
+    height: 100vh;              /* Full viewport height */
+    display: flex;
+    justify-content: center;   /* Centers content horizontally */
+    align-items: center;       /* Centers content vertically */
+    text-align: center;
+}
+
 .intro__hello {
     font-size: clamp(0.5rem, 1vw, 1rem);
     font-weight: normal;
