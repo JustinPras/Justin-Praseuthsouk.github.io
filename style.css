@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #171C28;
+    color: #E7E7E7;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
+
+/* The intro section taking the full viewport */
+#intro {
+    height: 90vh;              /* Full viewport height */
+    display: flex;
+    flex-direction: column;     /* Stacks content vertically */
+    justify-content: center;   /* Aligns content vertically */
+    align-items: flex-start;       /* Aligns content horizontally */
+    text-align: center;
+    padding-left: 15vw;
+    padding-bottom: 10vh;
+}
+
+.intro__hello {
+    font-size: clamp(1rem, 1vw, 2rem);
+    font-weight: normal;
+    color: #22ccff;
+    line-height: 0;
+    margin: 0;
+}
+
+.intro__name {
+    font-size: 8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.intro__tagline {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Styling the title using the class */
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007BFF;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin:0;
+}
+
+.about-me__right, .skills__description, .projects__description {
+    margin-top: 0;
+    margin-bottom: 10vh;
+    padding-right: 20vw;
+    
+}
+
+/* Grid Layout for About Section */
+.margins {
+    display: grid;
+    grid-template-columns: 2fr 3fr; /* Left takes 2 part, right takes 3 parts */
+    gap: 100px; /* Space between columns */
+    align-items: start; /* Align both sides to the top */
+}
