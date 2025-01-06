@@ -1,0 +1,16 @@
+.intro__hello {
+    font-size: clamp(0.5rem, 1vw, 1rem);
+    font-weight: normal;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.intro__name {
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.intro__tagline {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
