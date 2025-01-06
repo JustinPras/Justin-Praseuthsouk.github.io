@@ -7,11 +7,10 @@
     align-items: flex-start;       /* Aligns content horizontally */
     text-align: center;
     margin-left: 20vw;
-    gap: 1rem;
 }
 
 .intro__hello {
-    font-size: clamp(0.5rem, 1vw, 1rem);
+    font-size: clamp(1rem, 1vw, 2rem);
     font-weight: normal;
     color: #007BFF;
     margin: 0;
