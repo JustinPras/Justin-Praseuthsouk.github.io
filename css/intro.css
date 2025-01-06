@@ -27,3 +27,23 @@
     font-weight: normal;
     margin: 0;
 }
+
+/* Scroll down button styling */
+#scrollButton {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+#scrollButton:hover {
+    background: lightgray;
+}
