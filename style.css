@@ -88,13 +88,12 @@ footer {
     justify-content: space-between; /* Evenly space columns */
     gap: 40px;
     flex-wrap: wrap; /* Allow responsiveness */
-    max-width: 700px;
+    max-width: 650px;
     margin: 0;
 }
 
 .skills__column {
     flex: 1;
-    min-width: 200px; /* Prevent columns from becoming too narrow */
 }
 
 .skills__column h3 {
