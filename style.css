@@ -12,13 +12,6 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    text-align: center;
-    padding: 1rem;
-    background: #333;
-    color: white;
-}
-
 main {
     padding: 2rem;
 }
@@ -28,6 +21,28 @@ footer {
     padding: 1rem;
     background: #333;
     color: white;
+}
+
+/* Adding global styles for the header section */
+.social-header {
+    position: absolute; /* Top-right positioning */
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 1.5rem; /* Space between icons */
+    font-size: 2.5rem; /* Adjust the icon size */
+}
+
+/* Styling the icons */
+.social-header a {
+    color: #3B82F6; /* Blue color for the icons */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for the icons */
+.social-header a:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+    color: #E7E7E7; /* Light color on hover */
 }
 
 /* The intro section taking the full viewport */
@@ -47,6 +62,7 @@ footer {
     font-size: clamp(1rem, 1vw, 2rem);
     font-weight: normal;
     color: #22ccff;
+    color: #007BFF;
     line-height: 0;
     margin: 0;
 }
@@ -69,6 +85,7 @@ footer {
     font-weight: bold;
     /* color: #007BFF; */
     color: #22ccff;
+    color: #007BFF;
     display: flex;
     justify-content: flex-end;
     align-items: center;
