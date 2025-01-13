@@ -91,7 +91,7 @@ footer {
     margin:0;
 }
 
-.about-me__right, .skills__description, .projects__description {
+.about-me__right, .skills__section, .projects {
     margin-top: 0;
     margin-bottom: 10vh;
     padding-right: 20vw;
@@ -99,7 +99,7 @@ footer {
     font-weight: 300;
 }
 
-#skills__section{
+.skills__section{
     display: flex;
     justify-content: space-between; /* Evenly space columns */
     gap: 40px;
@@ -129,14 +129,22 @@ footer {
     font-weight: 300;
 }
 
-.projects__description {
+.projects {
     list-style: none;
-    padding: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.projects h3 {
     margin-bottom: 0;
 }
 
-.projects__description li{
-    margin-bottom: 3rem;
+.projects p { 
+    margin-top: 0;
+}
+.projects li{
+    margin-bottom: 2rem;
 }
 
 /* Grid Layout for About Section */
