@@ -79,6 +79,14 @@ footer {
     margin: 0;
 }
 
+/* Grid Layout for rest of page */
+.margins {
+    display: grid;
+    grid-template-columns: 2fr 3fr; /* Left takes 2 part, right takes 3 parts */
+    gap: 100px; /* Space between columns */
+    align-items: start; /* Align both sides to the top */
+}
+
 /* Styling the title using the class */
 .title {
     font-size: 2.5rem;
@@ -94,9 +102,20 @@ footer {
 .about-me__right, .skills__section, .projects {
     margin-top: 0;
     margin-bottom: 10vh;
-    padding-right: 20vw;
+    margin-right: 20vw;
     font-size: 0.9rem;
     font-weight: 300;
+    box-sizing: border-box;
+}
+
+.about-me__right h3 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.about-me__right p {
+    margin-top: 0;
+    margin-bottom: 2rem;
 }
 
 .skills__section{
@@ -147,13 +166,7 @@ footer {
     margin-bottom: 2rem;
 }
 
-/* Grid Layout for About Section */
-.margins {
-    display: grid;
-    grid-template-columns: 2fr 3fr; /* Left takes 2 part, right takes 3 parts */
-    gap: 100px; /* Space between columns */
-    align-items: start; /* Align both sides to the top */
-}
+
 
 @media screen and (max-width: 480px) {
     /* Adding global styles for the header section */
@@ -163,7 +176,7 @@ footer {
     }
 
     main {
-        padding: 1;
+        padding-left: 5vw;
     }
 
     /* The intro section taking the full viewport */
@@ -174,7 +187,7 @@ footer {
     }
 
     .intro__hello {
-        font-size: 0.55rem;
+        font-size: 0.6rem;
         line-height: 0;
         margin: 0;
         margin-bottom: 1vh;
@@ -182,7 +195,7 @@ footer {
 
     .intro__name {
         /* font-size: 1.9rem; */
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: bold;
         margin-top: 1vh;
         line-height: 1.1;
@@ -190,9 +203,41 @@ footer {
     }
 
     .intro__tagline { 
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         font-weight: 300;
         margin: 0;
         text-align: left;
+    }
+
+    .margins {
+        display: grid;
+        grid-template-columns: 3fr 5fr; /* Left takes 1 part, right takes 3 parts */
+        gap: 5vw; /* Space between columns */
+        align-items: start; /* Align both sides to the top */
+    }
+
+    .title {
+        font-size: 1rem;
+        margin:0;
+        padding-left: 0;
+        padding-top: 1.9vh;
+    }
+
+    .about-me__right, .skills__section, .projects {
+        margin-top: 0;
+        margin-bottom: 10vh;
+        margin-right: 5vw;
+        font-size: 0.9rem;
+        font-weight: 300;
+        box-sizing: border-box;
+    }
+
+    .about-me__right h3 {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .about-me__right p {
+        margin-top: 0;
     }
 }
