@@ -60,7 +60,7 @@ footer {
 
 .intro__hello {
     font-size: clamp(1rem, 1vw, 2rem);
-    font-weight: normal;
+    font-weight: 300;
     color: #22ccff;
     color: #007BFF;
     line-height: 0;
@@ -75,7 +75,7 @@ footer {
 
 .intro__tagline {
     font-size: clamp(1rem, 1.5vw, 1.5rem);
-    font-weight: normal;
+    font-weight: 300;
     margin: 0;
 }
 
@@ -153,4 +153,46 @@ footer {
     grid-template-columns: 2fr 3fr; /* Left takes 2 part, right takes 3 parts */
     gap: 100px; /* Space between columns */
     align-items: start; /* Align both sides to the top */
+}
+
+@media screen and (max-width: 480px) {
+    /* Adding global styles for the header section */
+    .social-header {
+        gap: 1rem; /* Space between icons */
+        font-size: 1.5rem; /* Adjust the icon size */
+    }
+
+    main {
+        padding: 1;
+    }
+
+    /* The intro section taking the full viewport */
+    #intro {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-bottom: 10vh;
+    }
+
+    .intro__hello {
+        font-size: 0.55rem;
+        line-height: 0;
+        margin: 0;
+        margin-bottom: 1vh;
+    }
+
+    .intro__name {
+        /* font-size: 1.9rem; */
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-top: 1vh;
+        line-height: 1.1;
+        text-align: left;
+    }
+
+    .intro__tagline { 
+        font-size: 0.7rem;
+        font-weight: 300;
+        margin: 0;
+        text-align: left;
+    }
 }
